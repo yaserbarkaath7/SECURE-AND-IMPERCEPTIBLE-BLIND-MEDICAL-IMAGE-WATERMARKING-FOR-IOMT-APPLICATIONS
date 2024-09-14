@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watermarking Results</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Watermarking Results</h1>
+        <div class="results-section">
+            <h2>Watermarked Host Image</h2>
+            <img src="static/uploads/results/watermarked_image.png" alt="Watermarked Host Image">
+            <a href="static/uploads/results/watermarked_image.png" class="download-button" download>Download Watermarked Image</a>
+        </div>
+        <div class="results-section">
+            <h2>Extracted Watermark Image</h2>
+            <img src="static/uploads/results/extracted_watermark.png" alt="Extracted Watermark Image">
+            <a href="static/uploads/results/extracted_watermark.png" class="download-button" download>Download Extracted Watermark</a>
+            <p class="note">The extracted watermark differs to preserve the quality of the watermarked image, balancing watermark visibility with minimal impact on the image's overall quality.</p>
+        </div>
+        <div class="results-section">
+            <h2>Evaluation Metrics</h2>
+            <p><strong>Peak Signal-to-Noise Ratio (PSNR):</strong> {{ psnr_value }}</p>
+            <p><strong>Structural Similarity Index (SSIM):</strong> {{ ssim_value }}</p>
+        </div>
+        <a href="/" class="back-button">Go Back</a>
+    </div>
+</body>
+</html>
